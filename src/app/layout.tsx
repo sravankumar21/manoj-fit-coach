@@ -22,6 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full antialiased">
+      <head>
+        <script src="https://accounts.google.com/gsi/client" async defer />
+      </head>
       <body className="min-h-full flex flex-col font-sans">{children}</body>
     </html>
   )
